@@ -1,5 +1,7 @@
 package es.iescamas.onlineshopping;
-
+/**
+ * @author Miguel
+ */
 public class Customers {
 	private String id;
 	private Address address;
@@ -9,13 +11,24 @@ public class Customers {
 	public Customers() {
 	}
 	
+	/**
+	 * Clientes
+	 * @param id 
+	 * @param address
+	 * @param phone
+	 * @param email
+	 */
 	public Customers(String id, Address address, Phone phone, String email) {
 		this.id = id;
 		this.address = address;
 		this.phone = phone;
 		this.email = email;
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public Address getAddress() {
 		return address;
 	}
